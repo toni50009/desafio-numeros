@@ -1,10 +1,15 @@
+// Constantes
 let level = 1;
 let tentativas = 6;
 let qtdInput;
 let texto;
 let listaNumeros = ['Alfa 1-5','Beta 6-10','Alfa 10-20','Beta 21-30','Gama 31-40','Alfa 15-25','Beta 40-50','Gama 90-100','Zeta 101 - 111'];
 let indice = 0;
+let nomeNumero;
+let campo;
+let input;
 
+//Inputs e numeros gerados
 let numeroGerado1;
 let numeroGerado2;
 let numeroGerado3;
@@ -16,9 +21,6 @@ let numeroDigitado4;
 let listaTentativas = [];
 let textoTentativas = document.getElementById('tentativasRestantes');
 let campoResposta = document.getElementById('lista-Respostas');
-let nomeNumero;
-let campo;
-let input;
 let botaoChutar = document.getElementById('botaoChutar');
 botaoChutar.setAttribute('disabled',true);
 let botaoGerar = document.getElementById('botaoGerar');
@@ -88,8 +90,6 @@ function geraCampo(qtdInput){
     numeroID ++;
 }
 }
-
-
 
 function verificarNumero(nomeNumero, numeroDigitado, numeroGerado) {
     let itemResposta = document.createElement('li');
@@ -176,6 +176,7 @@ function chutar(){
         }
         console.log(tentativas);
         if(numeroDigitado1 == numeroGerado1 && numeroDigitado2 == numeroGerado2 && numeroDigitado3 == numeroGerado3){
+            tentativas = 6;
             alert(mensagemVitoria);
             reseta();
             document.querySelector('h1').textContent = 'Você está agora no nível 3! Clique em Gerar para Iniciar!';
@@ -217,9 +218,6 @@ function chutar(){
     }
 
 }
-
-
-
 
 
 function reseta() {
