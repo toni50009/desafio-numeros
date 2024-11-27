@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesafioNumeros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="titulo texto-laranja">Bem-vindo ao desafio dos números!</header>
+    <section class="container_texto">
+        <h1>A cada rodada, serão gerados uma quantidade de números dentre um intervalo diferente. A ordem dos números é determinado por: Alfa, Beta, Gama e Zeta.
+            <br>
+        Tente descobrir cada número de cada intervalo no campo que indicar. Pressione Gerar para começar.
+        </h1>
+            <button onclick="gerar()" id="botaoGerar" class="btn-gerar">Gerar</button>
+            <button onclick="chutar()" id="botaoChutar" class="btn-gerar" >Chutar</button>
+        <br>
+        <br>
+    </section>
+    <div class="classe_pai" id="pai">
+        <div class="container_jogo" id="campo_jogo">
+            <ul class="container_texto" id="lista-Respostas">
+            </ul>
+        </div>
+    </div>    
+    <h2 id="tentativasRestantes">Tentativas:6</h2>
+    <script src="app.js"></script>
+</body>
+</html>

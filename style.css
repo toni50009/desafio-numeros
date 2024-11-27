@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    flex-direction:column;
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.texto-laranja{
+    border: 2px solid orangered;
+    border-radius: 20rem;
+    background-color:orange;
+    color: black;
+}
+header{
+    font-size: 30px;
+    text-align: center;
+}
+
+.invisivel{
+    display: none;
+}
+
+.campo_numero{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-size: large;
+}
+
+.texto_descricao{
+        display:flex;
+        flex-direction: column;
+        
+}
+
+
+.btn-gerar{
+        background-color: orange;
+        font-weight: 300;
+        font-size: large;
+        border: 2px solid white;
+        border-radius: 2rem;
+        margin-right: 10px;
+}
+
+
+.btn-gerar:hover{
+    background-color: lightsalmon;
+    font-weight: 300;
+    font-size: large;
+    border: 2px solid white;
+    border-radius: 2rem;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.campo_jogo{
+    display: inline-block;
+}
